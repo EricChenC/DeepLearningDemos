@@ -1,2 +1,2 @@
-# DeepLearningModels
+# DeepLearningDemos
 Implement Deep Learning Models
