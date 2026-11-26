@@ -11,7 +11,7 @@ print("Hello Deep Learning")
 # ==========================================
 
 # 1. Initialize
-W = 1
+W = 10
 x = 1
 target = 5
 
@@ -33,14 +33,14 @@ while True:
     L = target - q
 
     # Loss function
-    J = 0.5 * L ** 2
+    J = L ** 2
 
     print(f"\nIteration: {iteration}")
     print(f"Forward:")
     print(f"  W = {W:.8f}")
     print(f"  q = W * x = {q:.8f}")
     print(f"  L = target - q = {L:.8f}")
-    print(f"  J = 0.5 * L^2 = {J:.8f}")
+    print(f"  J = L^2 = {J:.8f}")
 
     # --------------------------------------
     # STOP CONDITION
@@ -54,7 +54,7 @@ while True:
     # BACKWARD
     # --------------------------------------
 
-    dJ_dL = L
+    dJ_dL = 2 * L
     dL_dq = -1
     dq_dW = x
 
